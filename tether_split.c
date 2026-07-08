@@ -1,4 +1,7 @@
-/* tether_split.c - The Weaver Engine OBS Network Multiplexer */
+/* tether_split.c - Micro-interceptor for per-app network routing.
+ * Forces SO_BINDTODEVICE on application sockets with 1MB WAN-jitter buffers.
+*/
+
 #define _GNU_SOURCE
 #include <dlfcn.h>
 #include <string.h>
