@@ -47,11 +47,11 @@ sudo systemctl restart NetworkManager
 
 #### Step 3: Compile the Middleware
 
-Now, take the `vx_obs_tether.c` file and compile it into a shared object (`.so`) library. We use standard `gcc`, which is native to almost all Linux distributions.
+Now, take the `tether_split.c` file and compile it into a shared object (`.so`) library. We use standard `gcc`, which is native to almost all Linux distributions.
 
 ```
 
-gcc -fPIC -shared -o vx_obs_tether.so vx_obs_tether.c -ldl
+gcc -fPIC -shared -o tether_split.so tether_split.c -ldl
 
 ```
 
