@@ -133,7 +133,7 @@ For Discord (or any other app):
 LD_PRELOAD=$PWD/tether_split.so discord
 ```
 
-(Alternatively, you can just type out the full path manually, for example: LD_PRELOAD=/home/youruser/tether-split/tether_split.so obs)
+(Alternatively, you can just type out the full path manually, for example: LD_PRELOAD=/home/youruser/tether_split/tether_split.so obs)
 
 Here is exactly what the code is doing, line by line:
 
