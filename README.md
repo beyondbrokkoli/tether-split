@@ -42,7 +42,12 @@ int socket(int domain, int type, int protocol) {
 
 ```
 
+# Build
+```
 
+gcc -fPIC -shared -o tether_split.so tether_split.c -ldl
+
+```
 ### Why this exists
 
 Sometimes you want a specific application to use a specific network device, without changing the routing rules for the rest of your operating system. Instead of installing heavy networking daemons, container runtimes, or bloated user-space wrappers, this solves it with a few lines of clean C and zero dependencies.
