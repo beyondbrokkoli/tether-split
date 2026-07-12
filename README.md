@@ -42,7 +42,7 @@ int socket(int domain, int type, int protocol) {
 
 ```
 
-# Build
+### Build
 ```
 
 gcc -fPIC -shared -o tether_split.so tether_split.c -ldl
